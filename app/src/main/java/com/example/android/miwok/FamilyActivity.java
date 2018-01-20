@@ -31,16 +31,16 @@ public class FamilyActivity extends AppCompatActivity {
 
         ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new Word("father","epe"));
-        words.add(new Word("mother", "etd"));
-        words.add(new Word("son", "angsi"));
-        words.add(new Word("daughter","tune"));
-        words.add(new Word("older brother","taachi"));
-        words.add(new Word("younger brother","chalitti"));
-        words.add(new Word("older sister","tete"));
-        words.add(new Word("younger sister","koliti"));
-        words.add(new Word("grandmother","ama"));
-        words.add(new Word("grandfather","paapa"));
+        words.add(new Word("father","epe",R.drawable.family_father));
+        words.add(new Word("mother", "etd",R.drawable.family_mother));
+        words.add(new Word("son", "angsi",R.drawable.family_son));
+        words.add(new Word("daughter","tune",R.drawable.family_daughter));
+        words.add(new Word("older brother","taachi",R.drawable.family_older_brother));
+        words.add(new Word("younger brother","chalitti",R.drawable.family_younger_brother));
+        words.add(new Word("older sister","tete",R.drawable.family_older_sister));
+        words.add(new Word("younger sister","koliti",R.drawable.family_younger_sister));
+        words.add(new Word("grandmother","ama",R.drawable.family_grandmother));
+        words.add(new Word("grandfather","paapa",R.drawable.family_grandfather));
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
@@ -50,7 +50,7 @@ public class FamilyActivity extends AppCompatActivity {
         ArrayAdapter<Word> itemsAdapter =
                 new ArrayAdapter<Word>(this, R.layout.list_item, words);
 
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_family);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the

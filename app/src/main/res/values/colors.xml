@@ -34,4 +34,10 @@
 
     <!-- Background color for the phrases category -->
     <color name="category_phrases">#16AFCA</color>
+
+    <!-- Background color for the numbers text background -->
+    <color name="numbers_text_background">#FD8E09</color>
+
+    <!-- Background color for the numbers images background -->
+    <color name="numbers_image_background">#FEF7DA</color>
 </resources>
